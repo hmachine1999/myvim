@@ -91,6 +91,7 @@ set viminfo+=!
 " 带有如下符号的单词不要被换行分割
 set iskeyword+=_,$,@,%,#,-
 " 字符间插入的像素行数目
+set t_Co=256
 
 "markdown配置
 au BufRead,BufNewFile *.{md,mdown,mkd,mkdn,markdown,mdwn}   set filetype=mkd
@@ -452,11 +453,12 @@ Bundle 'Django-Projects'
 
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
+Bundle 'luochen1990/rainbow'
 " ...
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1 = "inc"
-
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle"
 filetype plugin indent on     " required!
 "
 "ctrlp设置
